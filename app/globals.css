@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+	--color-sunflower: #FFC300;
+	--color-dusk: #FF5733;
+	--color-midnight: #0A0A0A;
+	--color-skyblue: #0066FF;
+	--color-nature: #2E8B57;
+	--color-gold: #B1975A;
+}
+
+html, body {
+	background-color: var(--color-midnight);
+	color: #ffffff;
+	height: 100%;
+}
+
+/* alternate theme */
+.theme-light body {
+	background-color: #FEFEFE;
+	color: #0A0A0A;
+}
+.theme-light .bg-midnight { background-color: #FEFEFE !important; }
+.theme-light .text-white { color: #0A0A0A !important; }
+.theme-light .border-neutral-800 { border-color: #E5E7EB !important; }
+.theme-light .text-neutral-300 { color: #1F2937 !important; }
+.theme-light .text-neutral-400 { color: #374151 !important; }
+.theme-light a { color: #0A0A0A; }
+/* ultra-light accent bars */
+.theme-light .bg-sunflower { background-color: #FEF3C7 !important; }
+.theme-light .bg-dusk { background-color: #FEE2E2 !important; }
+.theme-light .bg-skyblue { background-color: #DBEAFE !important; }
+.theme-light .bg-nature { background-color: #D1FAE5 !important; }
+.theme-light .bg-gold { background-color: #FEF3C7 !important; }
+/* lighter backgrounds */
+.theme-light .bg-black\/70 { background-color: rgba(248,250,252,0.95) !important; }
+.theme-light .bg-black\/60 { background-color: rgba(248,250,252,0.90) !important; }
+.theme-light .bg-black\/55 { background-color: rgba(248,250,252,0.85) !important; }
+.theme-light .bg-black\/50 { background-color: rgba(248,250,252,0.80) !important; }
+.theme-light .bg-black\/40 { background-color: rgba(248,250,252,0.70) !important; }
+/* header background - lighter brown */
+.theme-light .bg-gradient-to-t { background: linear-gradient(to top, rgba(139,69,19,0.3), transparent) !important; }
+
+* {
+	border-radius: 0 !important;
+	box-shadow: none !important;
+}
+
+/* Typography */
+body {
+	font-family: Inter, Poppins, "Work Sans", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+	letter-spacing: 0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Playfair Display", "DM Serif Display", Cinzel, serif;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+}
+
+.separator {
+	@apply border-t border-neutral-800;
+}
+
+.container-max {
+	@apply max-w-6xl mx-auto px-6;
+}
